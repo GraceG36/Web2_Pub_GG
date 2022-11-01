@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@200;400;600;700&family=Open+Sans:wght@300&family=Quattrocento+Sans&display=swap');
+
+html {
+    font-family:'Montserrat', 'Times New Roman',sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+
+
+
+#about {
+    color: rgb(217, 147, 2);
+    font-weight: 600;
+}
+
+
+header {
+    text-align: right;
+}
+
+.text_box {
+    width: 40rem;
+    margin: 5rem 3rem 5rem 5rem;
+    display: inline-block;
+}
+
+.imgdiv {
+    width: 435px;
+    height: 315px;
+    display: inline-block;
+    margin: 6rem 3rem 5rem 0rem;
+}
+
+.icon {
+    float: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar{
+    background-color: black;
+    padding: 2rem;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.2rem;
+}
+
+h1 {
+    font-family: 'Marck Script', 'Times New Roman',sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: rgb(217, 147, 2);
+    margin: 0rem;
+}
+
+h2 {
+    font-family: 'Montserrat', 'Times New Roman',sans-serif;
+    font-size: 3rem;
+    font-weight: 700 bold;
+    margin: 0rem;
+}
+
+/* links */
+
+a {
+    color:#ffffff;
+    font-family: 'Montserrat','Times New Roman',sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
+a.icon > a:hover {
+    color: black;
+}
+
+a:hover {
+    color: rgb(217, 147, 2);
+}
+
+
+
+/* Paragraph and sections */
+
+p {
+    font-family: 'Quattrocento Sans','Times New Roman',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(110, 110, 110);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Images*/
+
+
+/* section*/
+
+section {
+    text-align: center;
+}
+
+
+footer {
+    display: block;
+    position: fixed bottom;
+}

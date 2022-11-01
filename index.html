@@ -2,10 +2,12 @@
 <html lang="en">
 
     <!-- Design by: Grace Garrand
-         Date:10-31-2022\
+         Date:10-24-2022\
          Class: IMED-2315-001 
         
-        To Nenad Manoilov: -->
+        To Nenad Manoilov: Hi! I am still rather new to HTML. I hope this is similar to the code
+        structure you used. I did change a couple of things, just for aesthetic reasons. Please 
+        let me know what I could improve on. Thanks! - Grace -->
 
 <head>
         <meta charset="UTF-8">
@@ -14,43 +16,46 @@
         <meta name="keywords" content="cafe, restaurant, chef, local, ingredients, food">
         <meta name="author" content="Grace Garrand">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="styles/style1.css" rel="stylesheet">
-            
+            <link href="styles/style_H.css" rel="stylesheet">
     <title>Cafe Story | Home</title>
     
     </head>
 
     <body>
-            <header>
+        <div class="navbar">
+        <header>
             <nav>
-                <a href="/index/">Welcome</a>
-                <a href="/menu/">Menu</a>
-                <a href="/reservations/">Reservations</a>
-                <a href="/reviews/">Reviews</a>
-                <a href="/contact/">Contact</a>
-                
+                <a class="icon" href="/home/">THE PLACE</a>
+                <a href="/welcome/">WELCOME</a>
+                <a href="/menu/">MENU</a>
+                <a href="/reservations/">RESERVATIONS</a>
+                <a href="/news/">NEWS</a>
+                <a href="/contact/">CONTACT</a>
             </nav>
         </header>
+        </div>
 
-        <section div="section">
-            <aside><h1>Discover</h1></aside>
-        
-        <article>
-            <h2> OUR STORY</h2>
-                <p> Welcome to our cafe, where stories are told and memories are made.
-                Our cooks are trained by our Head Chef, John Smith, who graduated from ABC Culinary School.
-                With their love and skills, you are sure to enjoy all our seasonal dishes that we update and change 
-                every week. We offer seasonal ingredients from local farmers and vendors for the freshest produce. 
-                We hope that you will visit us to experience great food and a fantastic atmosphere.
-                </p>
-                <aside><a class="about" href="/aboutus/">About Us</a></aside>
-        </article>
+        <div class="text_box">
+        <section>
+            <h1>Discover</h1>
+                <h2>OUR STORY</h2>
+                <img class="star" src="assets/Star.png" alt="Star shape">
+                    <p> Welcome to our cafe, where stories are told and memories are made.
+                    Our cooks are trained by our Head Chef, John Smith, who graduated from ABC Culinary School.
+                    With their love and skills, you are sure to enjoy all our seasonal dishes that we update and change 
+                    every week. We offer seasonal ingredients from local farmers and vendors for the freshest produce. 
+                    We hope that you will visit us to experience great food and a fantastic atmosphere.
+                    </p>
+                    <a id='about' href="/aboutus/">ABOUT US</a>
         </section>
-        <aside class="img">            
-            <img src="assets/our-story.jpg" alt="View of restaurant"> 
-        </aside>
+    </div>
 
+    <div class="imgdiv">
+    <img class="float" src="assets/our-story.jpg" alt="View of restaurant"> 
+    </div>
 
-<footer>Copyright 2022 | Designed with love by Grace Garrand</footer>
+    <div class="footer">
+        <footer>Copyright 2022 | Designed with love by Grace Garrand</footer>
+    </div>
 </body>
 </html>

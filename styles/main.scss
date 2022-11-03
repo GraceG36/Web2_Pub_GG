@@ -1,20 +1,22 @@
-@import "./vendor/normalize.scss";
-@import "./partials/colors";
+@import "./vendor/normalize";
 
 
-
-.navbar{
-    background-color: $bg-dark;
+.navbar {
     padding: 2rem;
-    a {
-        color: $font-light;
-        text-align: right;
-    }
-}
-
-@media (min-width: 800px) {
-    .navbar {
-        background-color: $font-light;
+    background-color: black;
+    nav {
+        float: right;
+        a {
+            display: inline;
+            color:white;
+            text-decoration: none;
+        
+        }
+        div {
+            color: white;
+            display: inline-block;
+            
+        }
     }
     
 }

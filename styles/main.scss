@@ -1,0 +1,20 @@
+@import "./vendor/normalize.scss";
+@import "./partials/colors";
+
+
+
+.navbar{
+    background-color: $bg-dark;
+    padding: 2rem;
+    a {
+        color: $font-light;
+        text-align: right;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar {
+        background-color: $font-light;
+    }
+    
+}

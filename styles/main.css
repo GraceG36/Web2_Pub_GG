@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Marck+Script&family=Montserrat:wght@200;600;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,19 +309,131 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Dosis", sans-serif;
+}
+
 .navbar {
-  padding: 2rem;
-  background-color: black;
+  background-color: #150300;
+  padding: 1.5rem;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+.navbar div {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar #thePlace {
+  color: #ffffff;
+  display: inline;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 39px 0px 17px 48px;
+  font-weight: 700;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .navbar #thePlace {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margins: 1rem 0rem 0.5rem 0rem;
+  }
 }
 .navbar nav {
   float: right;
+  padding-right: 3rem;
 }
 .navbar nav a {
+  color: #ffffff;
   display: inline;
-  color: white;
   text-decoration: none;
+  padding: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-.navbar nav div {
-  color: white;
+
+.text_box {
+  margin: 9rem 4rem;
   display: inline-block;
+  max-width: 45%;
+}
+@media (max-width: 768px) and (max-width: 1024px) {
+  .text_box {
+    display: block;
+    align-items: center;
+    max-width: 75%;
+    margin: 6rem;
+  }
+}
+.text_box section {
+  text-align: center;
+}
+.text_box section h1 {
+  font-family: "Marck Script", cursive;
+  color: #DB8D33;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  display: inline-flexbox;
+  margin: 0;
+}
+.text_box section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-family: 700;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+.text_box section .star {
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.text_box section p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #575757;
+  margin: 5px 0 21px 0;
+  font-size: 24px;
+}
+.text_box section div a {
+  color: #DB8D33;
+  font-size: 14px;
+}
+
+.imgdiv {
+  display: inline-block;
+  margin: 10rem 5rem;
+  border-radius: 16px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (max-width: 768px) {
+  .imgdiv {
+    display: block;
+    position: relative;
+    align-items: center;
+    margin: 7.5rem;
+  }
+}
+
+.footerContainer {
+  padding: 1.2rem;
+  background-color: #414141;
+  position: fixed bottom;
+}
+.footerContainer footer {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  width: 504px;
+  margin-left: 8.2rem;
+  height: 24px;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */

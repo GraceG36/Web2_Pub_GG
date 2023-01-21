@@ -14,127 +14,84 @@
 @import "./partial/media";
 
 
-@media (min-width: 40em) {
-    
-    }
-//body
 body {
-    font-family: $primary-font;
+    height: 100vh;
 }
 
-//Navigation bar
-.navbar {
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+header {
+    display: flex;
     background-color: $darker-background;
-    padding: 1.5rem;
-    @media (max-width:$tablet) {
-        padding: 1rem 2.5rem 2.5rem 2.5rem;
-    }
-    div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+    a, nav {
         color: $nav-text-color;
         text-decoration: none;
-    }
+        padding: 12px;
+        font: 400 14px $title;
+    }   
     #thePlace {
-        color: $nav-text-color;
-        display: inline; 
-        text-decoration: none;
-        font-family: $title;
-        padding: 39px 0px 17px 48px;
-        font-weight: 700;
         font-size: 18px;
-        @media (max-width:$tablet) {
-            display: block;
-            text-align: center;
-            padding: 1.5rem;
-            margins: 1rem 0rem .5rem 0rem;
-        }
+        font-weight: 700;
     }
-    nav {
-        float: right;
-        padding-right: 3rem; 
-    a {
-        color: $nav-text-color;
-        display: inline; 
-        text-decoration: none;
-        padding: .6rem;
-        font-family: $title;
-        font-size: 16px;
-    }  
+
+}
+
+section {
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2 {
+        font: 400 48px $heading;
+        color: $secondary-font-color;
+        margin: 0;
+    }
+    h3{
+        font: 700 48px $title;
+        margin: 0;
+    }
+    p {
+        font: 400 24px $primary-font;
+        color: $font-grey;
+        margin-top: 8px;
+    }
+    #about {
+        font: 700 14px $primary-font;
+        color: $secondary-font-color;
     }
 }
 
-//Text Container
-.text_box {
-    margin: 9rem 4rem;
-    display: inline-block; 
-    max-width: 45%;
-    @media (max-width:$tablet) and (max-width:$laptop) {
-        display: block;
-        align-items: center;
-        max-width: 75%;
-        margin: 6rem;
-        
-    }
-    section {
-        text-align: center;
-        h1 {
-            @include orangeHeading;
-            text-align: center;
-            display: inline-flexbox;
-            margin: 0;
-        }
-        h2 {
-            font-family: $title;
-            font-size: 3rem;
-            font-family: 700;
-            text-align: center;
-            margin: 0 0 5px 0;
-        }
-        .star {
-            align-items: center;
-            width: 24px;
-            height: 24px;
-        }
-        p {
-            text-align: center;
-            font-size: 1.5rem;
-            color: $primary-font-color;
-            margin: 5px 0 21px 0;
-            font-size: 24px;
-        }   
-        div {
-            a {
-                color: $secondary-font-color;
-                font-size: 14px;
-            }
-        }
-    }
+aside {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
 }
 
-//Image Container
-.imgdiv {
-    display: inline-block;
-    margin: 10rem 5rem;
-    border-radius: 16px;
-    max-width: fit-content;
-    @media (max-width:$tablet) {
-        display: block;
-        position:relative;
+@media (min-width: 1024px) {
+    .container {
+        height: 100%;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 65px 1fr;
+    }
+    header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    section, aside {
+        justify-content: center;
         align-items: center;
-        margin: 7.5rem;
-}
-}
-//Footer Container
-.footerContainer {
-    padding: 1.2rem;
-    background-color: $dark-background;
-    position: fixed bottom;
-    footer{
-        display: inline-block;
-        color: $nav-text-color;
-        text-align: center;
-        width: 504px;
-        margin-left: 8.2rem;
-        height: 24px;
-        font-size: 1rem;
+    }
+    section{
+        padding:  3rem 3rem 3rem 3.5rem;
     }
 }

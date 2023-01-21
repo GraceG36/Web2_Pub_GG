@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- Design by: Grace Garrand
-         Date:11-1-2022
-         Class: IMED-2315-001 
+<!--Design by: Grace Garrand
+         Date:11-30-2022
+         Class: IMED-2315-001 -->
         
-        To Nenad Manoilov: At first, it was challenging to get the vendor to import in, but I eventually figured it out.
-    I think I need to practice the SCSS way of coding more, as it is still new to me.
-    please leave note on how I can improve, as I know I need to. Thanks, Grace G.  -->
 
 <head>
         <meta charset="UTF-8">
@@ -22,41 +19,37 @@
     </head>
 
     <body>
-        <div class="navbar">
+        <main class="container">
+
         <header>
-            <div><a id="thePlace" href="/home/">THE PLACE</a>
-            <nav>
+            <div class="main-logo"><a id="thePlace" href="/home/">THE PLACE</a></div>
+            <div class="nav-menu"><nav>
                 <a href="/welcome/">WELCOME</a>
                 <a href="/menu/">MENU</a>
                 <a href="/reservations/">RESERVATIONS</a>
                 <a href="/news/">NEWS</a>
                 <a href="/contact/">CONTACT</a>
-            </nav>
-            </div>
+            </nav></div>
         </header>
-        </div>
 
-        <div class="text_box">
         <section>
-            <h1>Discover</h1>
-                <h2>OUR STORY</h2>
-                <img class="star" src="assets/images/Star.png" alt="Star shape">
+            <div><h2>Discover</h2></div>
+            <div><h3>OUR STORY</h3></div>
+                <div><img class="star" src="assets/images/Star.png" alt="Star shape"></div>
                     <p> Welcome to our cafe, where stories are told and memories are made.
                     Our cooks are trained by our Head Chef, John Smith, who graduated from ABC Culinary School.
                     With their love and skills, you are sure to enjoy all our seasonal dishes that we update and change 
                     every week. We offer seasonal ingredients from local farmers and vendors for the freshest produce. 
                     We hope that you will visit us to experience great food and a fantastic atmosphere.
                     </p>
-                    <div><a id="about" href="/">ABOUT US</a></div>
+            <a id="about" href="/">ABOUT US</a>
         </section>
-    </div>
 
-    <div class="imgdiv">
-    <img src="assets/images/our-story.jpg" alt="View of restaurant"> 
-    </div>
-        <div class="footerContainer">
-            <footer>Copyright 2022 | Designed with love by Grace Garrand</footer>
-            <footer>Permissions and Copyright | Contact the Team</footer>
-        </div>
+
+        <aside>
+             <div><img src="assets/images/our-story.jpg" alt="View of restaurant"></div>
+        </aside>
+
+    </main>
 </body>
 </html>

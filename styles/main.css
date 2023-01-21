@@ -310,130 +310,83 @@ template {
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  height: 100vh;
 }
 
-.navbar {
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+header {
+  display: flex;
   background-color: #150300;
-  padding: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  justify-content: space-between;
 }
-@media (max-width: 768px) {
-  .navbar {
-    padding: 1rem 2.5rem 2.5rem 2.5rem;
-  }
-}
-.navbar div {
+header a, header nav {
   color: #ffffff;
   text-decoration: none;
+  padding: 12px;
+  font: 400 14px "Montserrat", sans-serif;
 }
-.navbar #thePlace {
-  color: #ffffff;
-  display: inline;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  padding: 39px 0px 17px 48px;
-  font-weight: 700;
+header #thePlace {
   font-size: 18px;
-}
-@media (max-width: 768px) {
-  .navbar #thePlace {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    margins: 1rem 0rem 0.5rem 0rem;
-  }
-}
-.navbar nav {
-  float: right;
-  padding-right: 3rem;
-}
-.navbar nav a {
-  color: #ffffff;
-  display: inline;
-  text-decoration: none;
-  padding: 0.6rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-weight: 700;
 }
 
-.text_box {
-  margin: 9rem 4rem;
-  display: inline-block;
-  max-width: 45%;
-}
-@media (max-width: 768px) and (max-width: 1024px) {
-  .text_box {
-    display: block;
-    align-items: center;
-    max-width: 75%;
-    margin: 6rem;
-  }
-}
-.text_box section {
+section {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.text_box section h1 {
-  font-family: "Marck Script", cursive;
+section h2 {
+  font: 400 48px "Marck Script", cursive;
   color: #DB8D33;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-  display: inline-flexbox;
   margin: 0;
 }
-.text_box section h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  font-family: 700;
-  text-align: center;
-  margin: 0 0 5px 0;
+section h3 {
+  font: 700 48px "Montserrat", sans-serif;
+  margin: 0;
 }
-.text_box section .star {
-  align-items: center;
-  width: 24px;
-  height: 24px;
+section p {
+  font: 400 24px "Dosis", sans-serif;
+  color: #414141;
+  margin-top: 8px;
 }
-.text_box section p {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #575757;
-  margin: 5px 0 21px 0;
-  font-size: 24px;
-}
-.text_box section div a {
+section #about {
+  font: 700 14px "Dosis", sans-serif;
   color: #DB8D33;
-  font-size: 14px;
 }
 
-.imgdiv {
-  display: inline-block;
-  margin: 10rem 5rem;
-  border-radius: 16px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+aside {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
 }
-@media (max-width: 768px) {
-  .imgdiv {
-    display: block;
-    position: relative;
-    align-items: center;
-    margin: 7.5rem;
+
+@media (min-width: 1024px) {
+  .container {
+    height: 100%;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 65px 1fr;
   }
-}
-
-.footerContainer {
-  padding: 1.2rem;
-  background-color: #414141;
-  position: fixed bottom;
-}
-.footerContainer footer {
-  display: inline-block;
-  color: #ffffff;
-  text-align: center;
-  width: 504px;
-  margin-left: 8.2rem;
-  height: 24px;
-  font-size: 1rem;
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  section, aside {
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    padding: 3rem 3rem 3rem 3.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
